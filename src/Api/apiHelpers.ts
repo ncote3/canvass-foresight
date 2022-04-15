@@ -36,7 +36,7 @@ export const getAllData = async () => {
 
         return {
           ...sideyard,
-          streetViewFilePath: `https://bucketeer-f3398609-fd96-462e-80c8-a3d55563b91a.s3.amazonaws.com/public${firstRemoved}`,
+          streetViewFilePath: `${process.env.REACT_APP_BUCKET_PUBLIC}${firstRemoved}`,
         };
       }) || [];
 
@@ -60,7 +60,7 @@ export const updateSideyardCall = async (updateBundle: UpdateBundle) => {
 
     return {
       ...data,
-      streetViewFilePath: `https://bucketeer-f3398609-fd96-462e-80c8-a3d55563b91a.s3.amazonaws.com/public${firstRemoved}`,
+      streetViewFilePath: `${process.env.REACT_APP_BUCKET_PUBLIC}${firstRemoved}`,
     };
   }
 
