@@ -9,7 +9,7 @@ const limit = "limit=50";
 
 export const getAllData = async () => {
   const { count: total = 473 }: { count?: number } = await API.get(
-    "sideyards_streetview/count"
+    `${process.env.REACT_APP_TABLE}/count`
   );
 
   const pagination = new PaginationHelper({
@@ -20,14 +20,12 @@ export const getAllData = async () => {
 
   let sideyards: Sideyard[] = [];
 
-  const blah = pagination.getPageCount();
-
   for (let i = 0; i < 1; i += 1) {
     const currentOffsetNumber = pagination.getOffset();
     const currentOffset = `offset=${currentOffsetNumber}`;
 
     const response = await API.get(
-      `sideyards_streetview?${relevantFields}&${limit}&${currentOffset}`
+      `${process.env.REACT_APP_TABLE}?${relevantFields}&${limit}&${currentOffset}`
     );
 
     const processedData: Sideyard[] =
@@ -52,7 +50,7 @@ export const getAllData = async () => {
 export const updateSideyardCall = async (updateBundle: UpdateBundle) => {
   const { id, ...body } = updateBundle;
 
-  const response = await API.put(`sideyards_streetview/${id}`, body);
+  const response = await API.put(`${process.env.REACT_APP_TABLE}/${id}`, body);
 
   if (response.status === 200) {
     const { data } = response;
