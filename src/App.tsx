@@ -26,12 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      {
-        <ImageCardCollection
-          sideyards={sideyards}
-          setSideyards={setSideyards}
-        />
-      }
+      <ImageCardCollection sideyards={sideyards} setSideyards={setSideyards} />
     </div>
   );
 }
