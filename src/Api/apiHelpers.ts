@@ -40,7 +40,6 @@ export const getAllData = async () => {
 
     sideyards = [...sideyards, ...processedData];
 
-    console.log(currentOffsetNumber + pagination.getLimit());
     pagination.setOffset(currentOffsetNumber + pagination.getLimit());
   }
 

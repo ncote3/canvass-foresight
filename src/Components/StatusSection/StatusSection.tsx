@@ -37,7 +37,7 @@ const StatusSection = (props: Props) => {
 
     if (statuses.wasCanvassed) {
       pills.push(
-        <Badge pill bg="success" style={badgeStyles}>
+        <Badge key={"Was Canvassed Pill"} pill bg="success" style={badgeStyles}>
           Was Canvassed
         </Badge>
       );
@@ -45,7 +45,13 @@ const StatusSection = (props: Props) => {
 
     if (statuses.shouldCanvass) {
       pills.push(
-        <Badge pill bg="warning" text="dark" style={badgeStyles}>
+        <Badge
+          pill
+          bg="warning"
+          text="dark"
+          style={badgeStyles}
+          key={"Should Canvass Pill"}
+        >
           Should Canvass
         </Badge>
       );
@@ -53,7 +59,12 @@ const StatusSection = (props: Props) => {
 
     if (statuses.shouldNotCanvass) {
       pills.push(
-        <Badge pill bg="danger" style={badgeStyles}>
+        <Badge
+          key={"Should Not Canvass Pill"}
+          pill
+          bg="danger"
+          style={badgeStyles}
+        >
           Should Not Canvass
         </Badge>
       );
@@ -68,6 +79,7 @@ const StatusSection = (props: Props) => {
     if (statuses.wasCanvassed === null) {
       buttons.push(
         <Button
+          key={"Was Canvassed Button"}
           variant="outline-success"
           onClick={() => updateStatuses({ ...statuses, wasCanvassed: true })}
         >
@@ -82,6 +94,7 @@ const StatusSection = (props: Props) => {
     ) {
       buttons.push(
         <Button
+          key={"Should Canvass Button"}
           variant="outline-warning"
           onClick={() =>
             updateStatuses({
@@ -96,6 +109,7 @@ const StatusSection = (props: Props) => {
       );
       buttons.push(
         <Button
+          key={"Should Not Canvass Button"}
           variant="outline-danger"
           onClick={() =>
             updateStatuses({
@@ -116,6 +130,7 @@ const StatusSection = (props: Props) => {
     ) {
       buttons.push(
         <Button
+          key={"Should Not Canvass Button"}
           variant="outline-danger"
           onClick={() =>
             updateStatuses({
@@ -134,6 +149,7 @@ const StatusSection = (props: Props) => {
     ) {
       buttons.push(
         <Button
+          key={"Should Canvass Button"}
           variant="outline-warning"
           onClick={() =>
             updateStatuses({

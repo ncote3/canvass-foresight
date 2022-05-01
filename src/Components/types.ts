@@ -19,3 +19,11 @@ export interface UpdateBundle extends StatusState {
   id: number;
   comment: string;
 }
+
+export interface FilterStatuses {
+  [key: string]: boolean;
+  wasCanvassed: boolean;
+  shouldCanvass: boolean;
+  shouldNotCanvass: boolean;
+  hideCanvassed: boolean;
+}
