@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:13.0.1"],\
             ["@testing-library/user-event", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:13.5.0"],\
             ["@types/jest", "npm:27.4.1"],\
+            ["@types/lodash", "npm:4.14.182"],\
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:18.0.3"],\
             ["@types/react-dom", "npm:18.0.0"],\
@@ -45,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aws-sdk", "npm:2.1114.0"],\
             ["axios", "npm:0.26.1"],\
             ["bootstrap", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:5.1.3"],\
+            ["lodash", "npm:4.17.21"],\
             ["react", "npm:18.0.0"],\
             ["react-bootstrap", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:2.2.3"],\
             ["react-dom", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:18.0.0"],\
@@ -4296,6 +4298,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/lodash", [\
+        ["npm:4.14.182", {\
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.182-1073aac722-7dd137aa9d.zip/node_modules/@types/lodash/",\
+          "packageDependencies": [\
+            ["@types/lodash", "npm:4.14.182"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/mime", [\
         ["npm:1.3.2", {\
           "packageLocation": "./.yarn/cache/@types-mime-npm-1.3.2-ea71878ab3-0493368244.zip/node_modules/@types/mime/",\
@@ -6375,6 +6386,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:13.0.1"],\
             ["@testing-library/user-event", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:13.5.0"],\
             ["@types/jest", "npm:27.4.1"],\
+            ["@types/lodash", "npm:4.14.182"],\
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:18.0.3"],\
             ["@types/react-dom", "npm:18.0.0"],\
@@ -6382,6 +6394,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aws-sdk", "npm:2.1114.0"],\
             ["axios", "npm:0.26.1"],\
             ["bootstrap", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:5.1.3"],\
+            ["lodash", "npm:4.17.21"],\
             ["react", "npm:18.0.0"],\
             ["react-bootstrap", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:2.2.3"],\
             ["react-dom", "virtual:7ed2515d8dbb396e2c6b0c6c18403d8edb938dfe3f08fbdceff461d2a68bd95f3d715d1c0cc8f059581dbb53bd90a14241499f484a032203a4850370b1eeed6f#npm:18.0.0"],\

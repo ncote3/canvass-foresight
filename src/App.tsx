@@ -1,10 +1,12 @@
 import React, { useEffect, useMemo, useState } from "react";
-import Spinner from "react-bootstrap/Spinner";
 
-import { getAllData } from "./Api/apiHelpers";
-import ImageCardCollection from "./Components/ImageCardCollection/ImageCardCollection";
-import { Sideyard } from "./Components/types";
+import EmptyMessage from "./Components/EmptyMessage/EmptyMessage";
+import Loading from "./Components/Loading/Loading";
+import FilteredListings from "./Components/FilteredListings/FilteredListings";
+
 import "./App.css";
+import { getAllData } from "./Api/apiHelpers";
+import { Sideyard } from "./Components/types";
 
 interface APIFetchStatus {
   loading: boolean;
@@ -40,26 +42,15 @@ function App() {
 
   const _renderContent = useMemo(() => {
     if (fetchStatus.loading) {
-      return (
-        <div className={"home"}>
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        </div>
-      );
+      return <Loading />;
     }
 
     if (fetchStatus.empty) {
-      return (
-        <div className={"home"}>
-          Server came back empty, try reloading a few times. Email
-          noah.cote3@gmail.com if it persists
-        </div>
-      );
+      return <EmptyMessage />;
     }
 
     return (
-      <ImageCardCollection sideyards={sideyards} setSideyards={setSideyards} />
+      <FilteredListings sideyards={sideyards} setSideyards={setSideyards} />
     );
   }, [sideyards, fetchStatus]);
 
