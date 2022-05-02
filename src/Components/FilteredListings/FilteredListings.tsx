@@ -66,6 +66,7 @@ const FilteredListings = (props: Props) => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    padding: "5%",
   };
 
   return (

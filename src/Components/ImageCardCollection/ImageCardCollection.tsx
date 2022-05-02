@@ -16,6 +16,7 @@ const ImageCardCollection = (props: Props) => {
     justifyContent: "space-evenly",
     rowGap: "15px",
     padding: ".5vw",
+    width: "100%",
   };
 
   return (

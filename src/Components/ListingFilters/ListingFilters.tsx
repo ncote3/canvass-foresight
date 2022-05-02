@@ -35,7 +35,7 @@ const ListingFilters = (props: Props) => {
   ];
 
   const containerStyles: React.CSSProperties = {
-    width: "90%",
+    width: "70%",
     margin: "2vw 0",
   };
 

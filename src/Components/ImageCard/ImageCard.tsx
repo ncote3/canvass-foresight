@@ -40,6 +40,7 @@ const ImageCard = (props: Props) => {
     display: "flex",
     justifyContent: "space-around",
     padding: "1em",
+    columnGap: "1em",
   };
 
   const submitResetButtonStyles: React.CSSProperties = { width: "10rem" };
